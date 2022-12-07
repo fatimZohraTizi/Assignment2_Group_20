@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Soccer Maxx</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="images/soccer-max-logo_1.png" alt="" width="200" height="150">
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">PROGRAMS</h3>
+            <h3 class="menuItem">MEET THE COACHES</h3>
+            <h3 class="menuItem">ENROLL NOW</h3>
+            <h3 class="menuItem">LOG IN</h3>
+        </div>
+    </nav>
+    <main class="regisMain">
+        <div class="container2">
+            <div class="contForm2">
+              <div class="title">Registration Form</div>
+              <form name="registrForm"  class="inForm" id="registrForm" action="thanks.html">
+                <div class="box1">
+                  <label >Player Name :</label>
+                  <input class="upFormInput" type="text" id="firstName" name="fName" placeholder="First Name">
+                  <input class="upFormInput" type="text" id="lastName" name="lName" placeholder="Last Name">
+                </div>
+                <div class="box1">
+                <label >Player Age :</label>
+                 <input class="upFormInput" type="text" name="Age" id="Age" >
+                </div>
+                <div class="box1">
+                    <label for="phone">Emergency Phone :</label>  
+                    <input class="upFormInput" type="text" name="phone" id="phone" >
+                  </div>
+                  <div class="box1">
+                    <label for="email">Email :</label>  
+                    <input class="upFormInput" type="text" name="email" id="email" >
+                  </div>
+                <div class="box1">
+                    <label for="address">Address :</label>
+                    <input class="upFormInput" type="text" name="street" id="street">
+                  </div>
+                  <div class="box1">
+                    <label for="zip">ZIP Code :</label>
+                    <input class="upFormInput" type="text" name="zipCode" id="zipCode">
+                  </div>
+                  <div class="box1">
+                    <label for="city">City :</label>
+                    <input class="upFormInput" type="text" name="city" id="city">
+                  </div>
+                  <div class="box1">
+                    <label for="city">Gender :</label><div class="gender">
+                    <input type="radio" id="male" name="radio" value="Male" checked>
+                    <span>Male</span>
+                    <input type="radio" id="female" name="radio" value="Female">
+                    <span for="female">Female</span></div> 
+                  </div>
+                  <div class="box1">
+                    <label for="female">Session : </label>
+                    <select class="upFormInput"  id="sessions">
+                        <option value="winter">Winter</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                      </select>
+                    </div>
+                    <div class="box1">
+                        <label for="female">Group Age : </label>
+                        <select class="upFormInput" name="groupAge" id="groupAge">
+                            <option value="6-8">6-8</option>
+                            <option value="9-11">9-11</option>
+                            <option value="12-14">12-14</option>
+                          </select>
+                        </div>
+                        <p>I authorize my child to participate in the activities.
+                        I understand that <strong> Soccer Max </strong> and its coaches are not responsible for accidental injuries.</p>
+                <div class="pass"><input type="checkbox" name="terms" id="terms">
+                    <label id="term"> I accept terms and conditions</label><br>
+                    </div>
+                <div class="box btn">
+                  <input type="submit"  value="Submit" id="regisSubmit">
+                </div>
+                
+              </form>
+            </div>
+          </div>
+          </main>
+    </main>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">The history of Soccer Max</li>
+                    <li class="fListItem">Stronger Youth.Beyond the Game</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Privacy and Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="images/facebook-4-48.png" alt="" class="fIcon">
+                    <img src="images/twitter-4-48.png" alt="" class="fIcon">
+                    <img src="images/instagram-4-48.png" alt="" class="fIcon">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -6,12 +6,15 @@ body {
     font-family: "Lato", sans-serif;
     padding: 0;
     margin: 0;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
 }
   
+  
 nav {
-    background-color: #111;
-    color: white;
-    padding: 20px 50px;
+    background-color: black;
+    color: black;
 }
 
 .navTop {
@@ -29,28 +32,110 @@ nav {
 .menuItem {
     margin-right: 50px;
     cursor: pointer;
-    color: lightgray;
+    color: white;
+    font-weight: 700;
+}
+
+.slider {
+    background-color: black;
+    height: 100vh;
+}
+.sliderTitle {
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    left: 2%;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FF9900;
+    z-index: 1;
+    background-color: white;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.sliderText {
+    position: absolute;
+    top: 154%;
+    right: 50%;
+    left: 2%;
+    font-size: 22px;
     font-weight: 400;
+    color: #FF9900;
+    z-index: 1;
+    background-color: white;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 30px ;
+    padding-top: 10px;
+}
+
+.OfferTitle{
+    position: absolute;
+    top: 205%;
+    right: 0%;
+    left: 0%;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    z-index: 1;
+    background-color: #873319;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: right;
+}
+.row {
+    display: flex;
+    position:relative;
+    background-color: #873319;
+    top: 600px;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 20px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.desc{
+    font-size: 18px;
+    color: white;
+    text-align: left;
 }
 
 footer {
     display: flex;
-  }
+    position: relative;
+    top: 100%;
+}
   
 .footerLeft {
     flex: 2;
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 50px;
 }
 
 .fMenuTitle {
     font-size: 16px;
+    color: white;
+    
 }
 
 .fList {
     padding: 0;
     list-style: none;
+    position: relative;
 }
   
 .fListItem {
@@ -76,17 +161,214 @@ footer {
 }
   
 .fIcon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+    color: white;
 }
 
 .fButton {
     padding: 5px;
-    background-color: black;
+    background-color:#873319;
     color: white;
 }
 
+/*form*/
+.regisMain{
+    background: #fff;
+    overflow: hidden;
+}
+.container2{
+    max-width: 80%;
+    padding: 0 20px;
+    margin: 170px auto;
+    background: #fff;
+  }
+  .contForm2{
+    width: 85%;
+    height: inherit;
+    background: #ffa500 ;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .box1{
+    height: 25px;
+    margin-bottom: 25px;
+    }
+  #firstName,
+#lastName, #male , #female{
+        width: 20%;
+    
+    }
+    .gender{
+        margin-left: 120px;
+        height: 70%;
+        margin-bottom: 45px;
+    }
+    select#groupAge, select#session {
+        max-width: 120px;
+        min-width: 80px;
+        height: 100%;
+        width: 150px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+.inForm .box1 input {
+    height: 100%;
+    width: 40%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    
+}
+.inform .box1 label{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+ 
+#regisSubmit{
+    width: 30%;
+    margin-top: 15px;
+}
+
+  
+
+/*sing in sing up page  https://www.codinglabweb.com/ */
+/*begin*/
+main{
+    background: #ffa500 ;
+    overflow: hidden;
+  }
+  
+  .container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+  }
+  
+  .contForm{
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+
+  .inForm{
+    padding: 30px 25px 25px 25px;
+    height: inherit;
+  }
+  .contForm .title , .contForm2 .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background: #050807;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+  
+  .inForm .box{
+    height: 45px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .upFormInput{
+    padding-left: 10px;
+  }
+  .inFormInput{
+    padding-left: 60px;
+  }
+  .inForm .box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .warning{
+    display: block;
+    width: 100%;
+    align-items: flex-end;
+    color: red;
+    margin-left: 5px;
+    font-size: 10pt;
+    
+  }
+  .inForm .box input:focus{
+    border-color: #ffa500;
+    box-shadow: inset 0px 0px 2px 2px rgba(251, 190, 7, 0.25);
+  }
+  .inForm .box input::placeholder{
+    color: #999;
+  }
+  .inForm .box i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #070e0c;
+    border: 1px solid #3c3e3e;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contForm form .pass{
+    margin: -2px 0 20px 0;
+  }
+  .contForm form .pass a{
+    color: #066787;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .contForm form .pass a:hover{
+    text-decoration: underline;
+  }
+  .contForm form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #050807;
+    border: 1px solid #ed8f0b;
+    cursor: pointer;
+  }
+  form .button input:hover{
+    background: #4d3d03
+  }
+  .contForm form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .contForm form .signup-link a{
+    color: #066787;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  .error{
+    color: red;
+    margin-left: 8px;
+    font-size: 10pt;
+  }
+  
+/*end*/
 
   
 
